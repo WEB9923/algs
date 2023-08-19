@@ -222,5 +222,7 @@ console.log(ArrWithoutDuplicates([0,0,1,2,2,3,4,5,6,7,7,7,8,9,9]));
 //**##**//
 const isAllArrElementIsOdd = (arr,cond) => arr.every(cond);
 console.log(isAllArrElementIsOdd([2,4,6,8,10],(num) => num % 2 === 0));
-
-
+//**##**//
+const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+const fn = (str, len) => str.length > len ? str.substring(0, len - 1) + "..." : str;
+console.log(fn(lorem, 50));
